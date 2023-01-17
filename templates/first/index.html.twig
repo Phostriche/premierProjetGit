@@ -1,0 +1,14 @@
+
+{% extends 'base.html.twig' %}
+
+{% block header_title %}
+    <h1>Bienvenue sur first, la première page !</h1>
+    {{firstname|capitalize}} {{nom |capitalize}} 
+{% endblock %}
+
+{% block body %}
+
+    <p>
+        Aujourd'hui on est le : {{"now"|date("d/m/Y")}}
+    </p>
+{% endblock %}

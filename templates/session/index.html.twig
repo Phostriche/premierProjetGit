@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Nombre de visite</title> <!-- mettez un titre significatif-->
+  <link rel="stylesheet" href="style.css"> <!-- Utilisez le chemain relatif au fichier CSS-->
+  <script src="script.js"></script> <!-- Ligne à envelver s'il n'y a pas de script-->
+</head>
+<body>
+  ...
+  <h1>
+Bonjour c'est votre visite numéro : {{ app.session.get('nbVisite')}}
+</h1>
+  ...
+</body>
+</html>
